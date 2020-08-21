@@ -44,7 +44,7 @@ def gen_line(line_length = 10, word_length = 10):
     :type word_length: int
     :returns: string - The generated line of words
     """
-    logging.debug(f"Generating lines with length {line_length} and word length {word_length}")
+    logging.debug(f"Generating line with length {line_length} and word length {word_length}")
     line = ' '.join([gen_random_string(word_length) for i in range(line_length)])
     logging.debug(f"Generated line with length {len(line)}")
     return line
